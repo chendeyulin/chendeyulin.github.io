@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7556163",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "14060375",
+      "name": "个人邮箱_侧边栏_收件箱",
+      "font_class": "gerenyouxiang_cebianlan_shoujianxiang",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "15994199",
+      "name": "avatar35",
+      "font_class": "35",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "34453050",
+      "name": "remind",
+      "font_class": "remind",
+      "unicode": "e840",
+      "unicode_decimal": 59456
+    }
+  ]
+}

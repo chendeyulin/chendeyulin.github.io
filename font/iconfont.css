@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1716958222197') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gouwuche:before {
+  content: "\e601";
+}
+
+.icon-gerenyouxiang_cebianlan_shoujianxiang:before {
+  content: "\e629";
+}
+
+.icon-35:before {
+  content: "\e624";
+}
+
+.icon-remind:before {
+  content: "\e840";
+}
+

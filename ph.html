@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font/iconfont.css">
+
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <h4><a href="./index.html">MARLEYSPOON</a></h4>
+            <div class="cent">
+                <ul>
+                    <li><a href="./cg.html">Our plans</a></li>
+                    <li><a href="./ph.html">How it works</a></li>
+                    <li><a href="./ps.html">Our recipes</a></li>
+                    <li><a href="./dd.html">Customer service</a></li>
+                </ul>
+            </div>
+            <div class="rig">
+                <span><i class="iconfont icon-gouwuchekong"></i></span>
+                <span><i class="iconfont icon-xiaoxi"></i></span>
+                <span><i class="iconfont icon-duanxin"></i></span>
+                <span><i class="iconfont icon-touxiang"></i></span>
+            </div>
+        </div>
+        <div class="center">
+            <div class="center_top">
+                <h1 style="color: #43cf7c;">Make your plan</h1>
+                <div style="display: flex;flex-direction: column;">
+                    <img src="./img/tt1.png" width="300px" height="35px" style="margin-top: 10px;" alt="">
+                    <div style="display: flex;font-size: 12px;justify-content: space-between;">
+                        <span>Select a plan</span>
+                        <span>Register</span>
+                        <span>Delivery details</span>
+                        <span>Payment</span>
+                    </div>
+                </div>
+            </div>
+            <div class="center_cent">
+                <div class="center_cent_lef">
+                    <p>1. Choose your preference</p>
+                    <div class="center_cent_lef_box">
+                        <ul id="product-list">
+                            <li id="1"><input  type="checkbox"> <img src="./img/wenz1.jpg" width="180px" height="170px"><input id="2" type="checkbox"><img src="./img/wenz2.jpg" width="180px" height="170px"></li>
+                            <li id="1"><input  type="checkbox"><img src="./img/wenz3.jpg" width="180px" height="170px"><input id="2" type="checkbox"><img src="./img/wenz4.jpg " width="180px" height="170px"></li>
+                            <li id="1"><input type="checkbox"><img src="./img/wenz5.jpg" width="180px" height="170px"><input id="2" type="checkbox"><img src="./img/wenz6.jpg" width="180px" height="170px"></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="center_cent_rig">
+                    <p>2. Customize your plan</p>
+                    <div>
+                        <p style="margin:10px 20px;font-weight: bold;">Number of people</p>
+                        <div class="jj2">  
+                            <div class="tabs">
+                                <div class="tab">
+                                    <input type="radio" id="tab-1" name="people" checked >
+                                    <label for="tab-1">2</label>
+                                </div>
+                            
+                                <div class="tab">
+                                    <input type="radio" id="tab-2" name="people" >
+                                    <label for="tab-2">4</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-weight: bold;">Meals per week</p>
+                        <p style="margin-bottom:20px;color: #ccc;">You'll get to pick your meals after sign up</p>
+                        <div class="jj2">
+                            <div class="tabs">
+                                <div class="tab">
+                                    <input type="radio" id="tab-3" name="meals" checked>
+                                    <label for="tab-3">2</label>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" id="tab-4" name="meals" >
+                                    <label for="tab-4">3</label>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" id="tab-5" name="meals" >
+                                    <label for="tab-5">4</label>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" id="tab-6" name="meals" >
+                                    <label for="tab-6">5</label>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" id="tab-7" name="meals" >
+                                    <label for="tab-7">6</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="kk" style="margin-top: 10px;">
+                        <div style="font-weight: bold;font-size: 30px;">
+                            <span>$</span>
+                            <div id="per" style="display: inline;">13.49</div>
+                            <span>per serving</span>
+                        </div>
+                        <div style="height: 32px;line-height:32px;color: #ccc;">
+                            <div id="mealscount" style="display: inline;">2</div>
+                            <span> meals for</span>
+                            <div id="peoplecount" style="display: inline;">2</div>
+                            <span> people each week</span>
+                            <!-- <p style="height: 16px;line-height:16px;color: #ccc;">6 meals for 2 people each week</p> -->
+                        </div>
+                        <div style="height: 32px;line-height:32px;color: #ccc;">
+                            <span>(</span>
+                            <div id="totalcount" style="display: inline;">4</div>
+                            <span>servings in total)</span>
+                            <!-- <p style="height: 16px;line-height:16px;color: #ccc;">(12 servings in total)</p> -->
+                        </div>
+                            
+                        <div>
+                            <div class="mbox">
+                                <span>Box price</span>
+                                <div id="box" style="display: inline;">
+                                    <div style="display: inline;">$</div>
+                                    <div id="boxprice" style="display: inline;">53.96</div>
+                                </div>
+                            </div>
+                            <div class="mbox">
+                                <span>Shipping</span>
+                                <div style="display: inline;">$10.49</div>
+                            </div>
+                            <div class="mbox" style="font-weight: bold;">
+                                <span>Total amount</span>
+                                <div id="box" style="display: inline;">
+                                    <div style="display: inline;">$</div>
+                                    <div id="amountprice" style="display: inline;">64.45</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center_bot">
+                            <!-- <a href="./ps.html"> -->
+                                <button  onclick="location.replace('./ps.html')" id="loginButton" class="bot1">Select this plan</button>
+                                <!-- <div class="bot1">Select this plan</div> -->
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="footer_left">
+                <p>© Blue Apron, LLC 2024</p>
+                <p>Do Not Sell or Share My Info</p>
+                <p>Notice to California Residents</p>
+            </div>
+            <div class="footer_right">
+                <ul>
+                    <li style="font-weight: bold;">About</li>
+                    <li>On the Menu</li>
+                    <li>Pricing</li>
+                    <li>Market</li>
+                    <li>Market</li>
+                    <li>Gift Cards</li>
+                    <li>Blog</li>
+                </ul>
+                <ul>
+                    <li style="font-weight: bold;">About</li>
+                    <li>On the Menu</li>
+                    <li>Pricing</li>
+                    <li>Market</li>
+                    <li>Market</li>
+                    <li>Gift Cards</li>
+                    <li>Blog</li>
+                </ul>
+                <ul>
+                    <li style="font-weight: bold;">About</li>
+                    <li>On the Menu</li>
+                    <li>Pricing</li>
+                    <li>Market</li>
+                    <li>Market</li>
+                    <li>Gift Cards</li>
+                    <li>Blog</li>
+                </ul>
+                <ul>
+                    <li style="font-weight: bold;">About</li>
+                    <li>On the Menu</li>
+                    <li>Pricing</li>
+                    <li>Market</li>
+                    <li>Market</li>
+                    <li>Gift Cards</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./swiper/swiper-bundle.min.js"></script>
+<script>
+      var loginButton = document.getElementById('loginButton');
+	var registerButton = document.getElementById('registerButton');
+			  
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    const list_node = document.getElementById('1');
+    const ul_node = document.getElementById('product-list')[0]
+    const colorArr = ['rgb(255,235,205)','rgb(255,240,245)','rgb(255,211,155)'];
+    // const check_nodes = ul_node.getElementById('2');
+    for(let i = 0; i < list_node.length; i++){
+        list_node[i].style.backgroundColor = colorArr[i % colorArr.length];
+        list_node[i].addEventListener('click',clickFn);
+    }
+    function clickFn(e){
+        console.log(e.target.tagName);
+        let num = 0;
+      if(e.target.tagName == 'INPUT' && e.target.checked == false){
+         checkAll.checked = false;
+      }else{
+        for (let i = 0; i < check_nodes.length; i++) {
+            if(check_nodes[i].checked == true){
+                num++;
+            }
+            
+        }
+        if(num == check_nodes.length){
+            checkAll.checked = true;
+        }
+      }
+    };
+   
+    const peopleRadios = document.querySelectorAll('input[name="people"]');
+    const mealsRadios = document.querySelectorAll('input[name="meals"]');
+    const perServing = document.getElementById('per');
+    const mealsCount = document.getElementById('mealscount');
+    const peopleCount = document.getElementById('peoplecount');
+    const totalCount = document.getElementById('totalcount');
+    const box = document.getElementById('boxprice');
+    const amount = document.getElementById('amountprice');
+
+            // Add event listener to the radio buttons
+        peopleRadios.forEach(radio => {
+            radio.addEventListener('change', updateResult);
+        });
+
+        mealsRadios.forEach(radio => {
+            radio.addEventListener('change', updateResult);
+        });
+
+        // Function to update the result
+        function updateResult() {
+            // Get the selected values
+            const inputElement =  document.querySelector('input[name="people"]:checked');
+            const selectedMeals = document.querySelector('input[name="meals"]:checked');
+            const peoplelab = document.querySelector('label[for="' + inputElement.id + '"]');  
+            const mealslab = document.querySelector('label[for="' + selectedMeals.id + '"]');
+            var peopleval= peoplelab.innerText;
+            var mealsval=mealslab.innerText;
+            const result = (peopleval*mealsval).toFixed(2);
+            if(peopleval==2&&mealsval==2){
+                p=13.49;
+            }
+            else if(peopleval==2&&mealsval==2){
+                p=13.49;
+            }
+            else if(peopleval==2&&mealsval==3){
+                p=12.49
+            }
+            else if(peopleval==2&&mealsval==4){
+                p=11.99;
+            }
+            else if(peopleval==2&&mealsval==5){
+                p=11.49;
+            }
+            else if(peopleval==2&&mealsval==6){
+                p=10.99;
+            }
+            else if(peopleval==4&&mealsval==2){
+                p=11.49;
+            }
+            else if(peopleval==4&&mealsval==3){
+                p=10.99;
+            }
+            else if(peopleval==4&&mealsval==4){
+                p=9.99;
+            }
+            else if(peopleval==4&&mealsval==5){
+                p=8.49;
+            }
+            else if(peopleval==4&&mealsval==6){
+                p=7.89;
+            }
+            perServing.textContent=p;
+            peopleCount.textContent = `${peopleval}`;
+            totalCount.textContent = `${result}`;
+            mealsCount.textContent = `${mealsval}`;
+            var boxp=(result*p).toFixed(2);
+            box.innerText=`${boxp}`;
+            var amountp=(parseFloat(boxp)+10.49).toFixed(2);
+            amount.innerText= `${amountp}`;
+
+        }
+
+</script>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .box {
+        width: 1200px;
+        height: 200px;
+        margin: 0 auto;
+        /* background-color: aquamarine; */
+    }
+
+    .cent {
+        margin-left: -200px;
+    }
+
+    .cent ul {
+        display: flex;
+    }
+
+    .cent ul li {
+        margin-left: 20px;
+    }
+
+    .top {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        justify-content: space-around;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .top .rig i {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 1200px;
+    }
+
+    .center_cent_lef_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        /* background-color: #e9f5f2; */
+        margin: 20px;
+    }
+    .center_cent_lef_box ul{
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+    /* border: 1px solid #666;
+    border-radius: 10px; */
+    margin-bottom: 10px;
+}
+    .center_cent_lef_box ul li{
+        width: 100%;
+        height: 180px;
+        /* border-bottom: 1px solid #666; */
+        line-height: 180x;
+        margin-top: 20px;
+        margin-left: 20px;
+        /* text-indent: 50px; */
+        /* font-size: 16px;
+        font-weight: 600; */
+        
+    }
+    .center_cent_lef_boxr ul li:last-child{
+    border-radius: 0 0 11px 11px;
+        border: none;
+    }
+    .center_cent_lef_box ul li:first-child{
+        border-radius: 11px 11px 0 0;
+        /* border: none; */
+    }
+    .jj2 {
+        display: flex;
+        margin-left: 20px;
+        border-radius: 20px;
+        height: 80px;
+    }
+
+    .jj_item {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        /* background-color: #484beb; */
+        border: 1px solid #ccc;
+    }
+    .tabs {
+        position: relative;
+        min-height: 200px; /* This part sucks */
+        clear: both;
+        margin: 25px 0;
+    }
+    .tab {
+        float: left;
+    }
+    .tab label {
+        background: #eee;
+        padding: 15px 20px 15px 20px;
+        border: 2px solid #ffffff;
+        margin-left: -2px;
+        position: relative;
+        /* left: -2px; */
+    }
+    .tab [type=radio] {
+        display: none;
+    }
+    [type=radio]:checked ~ label {
+        background: hsl(177, 78%, 95%);
+        border: 1px solid rgb(139, 205, 253);
+        z-index: 2;
+    }
+    [type=radio]:checked ~ label ~ .content {
+        z-index: 1;
+    }
+    .avv {
+        border: 1px solid #43cf7c;
+    }
+
+    .center_cent_lef_p {
+        font-size: 14px;
+    }
+
+    .center_top {
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .center_cent {
+        display: flex;
+    }
+
+    .kk {
+        text-align: center;
+        width: 400px;
+        height: 320px;
+        border: 1px solid #ccc;
+        line-height: 40px;
+    }
+
+    .center_cent_rig {
+        margin-left: 100px;
+    }
+
+    .center_cent_rig_tin {
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        padding-left: 20px;
+        background-color: #48e0eb;
+    }
+
+    .center_cent_lef_qq {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 12px;
+        padding: 0 20px;
+        border-radius: 20px;
+        background-color: #cbf8fc;
+    }
+
+    .center_cent_lef_dd {
+        width: 250px;
+        height: 40px;
+        /* line-height: 30px; */
+        margin-top: 10px;
+        /* color: #fff; */
+        font-size: 12px;
+        padding: 0 20px;
+        border-radius: 20px;
+        background-color: #cbf8fc;
+    }
+
+    .center_cent_rig_quy {
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        padding-left: 20px;
+        border-radius: 20px;
+        background-color: #43cf7c;
+    }
+
+    .center_bot {
+        margin-top: 10px;
+        
+    }
+    .mbox {
+
+        display: flex; 
+        justify-content: space-between; 
+    }
+                
+    .mbox span {
+        margin-left: -4vmin;
+        width: 28vmin;
+        height: 6vmin;
+        /* 设置盒子为行内块 */
+        display: inline-block;
+    }
+
+    .button {
+			    background-color: lightgrey; /* 初始背景颜色 */
+			    color: black; /* 初始文字颜色 */
+			    padding: 10px 20px;
+			    border: none;
+			    border-radius: 5px;
+			    cursor: pointer;
+			    transition: background-color 0.3s, color 0.3s; /* 过渡效果 */
+			  }
+			  .button.active {
+			    background-color: rgb(135, 215, 235); /* 激活状态背景颜色 */
+			    color: white; /* 激活状态文字颜色 */
+			  }
+			  .modal {
+			    display: none; /* 默认不显示 */
+			    position: fixed;
+			    left: 50%;
+			    top: 2%;
+			    transform: translate(-50%, -50%);
+			    padding: 20px;
+			    border: 1px solid #ddd;
+			    background-color: white;
+			    z-index: 220;
+			  }
+			  .overlay {
+			    display: none; /* 默认不显示 */
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    background-color: rgba(0, 0, 0, 0); /* 半透明背景 */
+			    z-index: 999;
+			  }
+
+    .bot1 {
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 22px;
+        color: #ffff;
+        border-radius: 20px;
+        background-color: #44cf7c;
+        border: 1px solid #44cf7c;
+    }
+
+    .bot2 {
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #44cf7c;
+        border-radius: 20px;
+        border: 1px solid #44cf7c;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        background-color: #e9f5f2;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+
+    .footer_left {
+        width: 40%;
+        line-height: 40px;
+        margin-top: 50px;
+    }
+
+    .footer_right {
+        width: 60%;
+        display: flex;
+    }
+
+    .footer_right ul {
+        margin-left: 20px;
+    }
+
+    .footer_right ul li {
+        margin-bottom: 10px;
+    }
+</style>

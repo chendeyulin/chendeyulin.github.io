@@ -38,56 +38,40 @@
                         <h2>EVERY WEEK</h2>
                         <h2>BACK</h2>
                     </div>
-                    <a href="./xq.html">
+                    <a href="./ph.html">
                         <div class="bot">GET START</div>
                     </a>
                     <!-- <p>Our menu has options for all tastes and lifestyles, including vegan,
-                        low-calorie and family-friendly options.</p> -->
+                                        low-calorie and family-friendly options.</p> -->
 
                 </div>
-            </div>
-           
-            <div class="center_mid">
-                <div class="midtext">
-                        <div style="text-align: center;margin: bottom 10px;width: 600px;height: 38px;line-height:38px;color: #17cd93;font-size: 36px;">100+ RECIPES EVERY WEEK</div>
-                        <div style="text-align: center;width: 600px;height: 38px;line-height:38px;color:rgb(167, 175, 172);font-size: 24px;">The most choice Lower-priced Special occasions</div>
-                        <div style="text-align: center;width: 600px;height: 38px;line-height:38px;color:rgb(167, 175, 172);font-size: 24px;">Fast meals Recipe customizations</div>
-                </div>
-                    <a href="./xq.html">
-                        <div class="bot1" >View Our Menus</div>
-                    </a>
-            </div>
-                    <!-- <p>Our menu has options for all tastes and lifestyles, including vegan,
-                        low-calorie and family-friendly options.</p> -->
-
-                <div class="center_img1">
-                </div>
-            <!-- <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./img/ms1.jpeg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/ms2.jpeg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/ms3.jpeg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/ms1.jpeg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/ms5.jpeg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/ms1.jpeg" alt=""></div>
-                </div>
-                <div class="swiper-button-next" style="color: pink;"></div>
-                <div class="swiper-button-prev" style="color: pink;"></div>
-            </div> -->
-            <!-- <div class="swiper-container">
-                <div class="swiper-wrapper" style="margin-left: 30px;">
-                    <div  style="width: 200px;"><img width="150px" height="200px" src="./img/ms1.jpeg" alt=""></div>
-                    <div  style="width: 200px;"><img width="150px" height="200px" src="./img/ms2.jpeg" alt=""></div>
-                    <div  style="width: 200px;"><img width="150px" height="200px" src="./img/ms3.jpeg" alt=""></div>
-                    <div  style="width: 200px;"><img width="150px" height="200px" src="./img/ms1.jpeg" alt=""></div>
-                    <div  style="width: 200px;"><img width="150px" height="200px" src="./img/ms5.jpeg" alt=""></div>
-                    <div  style="width: 200px;"><img width="150px" height="200px" src="./img/ms1.jpeg" alt=""></div>
-                </div>
-              
-                <div class="swiper-button-next" style="color: pink;"></div>
-                <div class="swiper-button-prev" style="color: pink;"></div>
-            </div> -->
+            </div>  
+            <!-- <a href="./ph.html"> -->
+            <button  class="but1" onclick="openNav()">
+              <div class="center_img1"></div>
+             </button>
+            <!-- </a> -->
         </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="topline">
+            <span class="bags">My bag</span>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <div class="midtext">
+                Your plan is in your cart!
+            </div>
+            <!-- <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a> -->
+            <div class="gdetails">
+             <img style="width:14vmin;height: 12vmin;margin-left: 1vmin;" src="./img/cart1.png">
+             <img style="width:30vmin;height: 12vmin;" src="./img/cart2.png">
+            </div>
+            <a href="./ph.html">
+                <div style="margin-left: 16vmin;color:rgb(254, 254, 254)" class="bot">Check out</div>
+            </a>
+          </div>   
         <div class="footer">
             <div class="footer_left">
                 <p>© Blue Apron, LLC 2024</p>
@@ -139,23 +123,28 @@
 </html>
 <script src="./swiper/swiper-bundle.min.js"></script>
 <script>
-    // var swiper = new Swiper('.swiper-container', {
-    //     slidesPerView: 3,
-    //     spaceBetween: 30,
-    //     slidesPerGroup: 3,
-    //     loop: true,
-    //     loopFillGroupWithBlank: true,
-    //     pagination: {
-    //         el: '.swiper-pagination',
-    //         clickable: true,
-    //     },
-    //     navigation: {
-    //         nextEl: '.swiper-button-next',
-    //         prevEl: '.swiper-button-prev',
-    //     },
-    // });
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "46vmin";
+    };
 
-
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    };
 </script>
 <style>
     * {
@@ -171,7 +160,6 @@
 
     .box {
         width: 1200px;
-        /* height: 200px; */
         margin: 0 auto;
         /* background-color: aquamarine; */
     }
@@ -206,26 +194,18 @@
         margin: auto;
         width: 1200px;
     }
-    .center_mid {
-        position: relative;
-        width: 1200px;
-        height: 26vmin;
-        /* background: url('./img/qp3.png') no-repeat;
-        background-size: 100%; */
-    }
-    .midtext{
-        display: inline-block;
-        margin-left: 46vmin;
-        width: 600px;
-    }
+
     .center_img1 {
         position: relative;
         width: 1200px;
-        height: 750px;
-        background: url('./img/qp3.png') no-repeat;
+        height: 450px;
+        background: url('./img/shouye2.jpg') no-repeat;
         background-size: 100%;
     }
 
+    .but1{
+       border: 0.1px solid transparent;/*设置透明边框*/
+    }
     .center_img2 {
         position: relative;
         width: 1200px;
@@ -252,31 +232,19 @@
 
     .center_img1_rig .bot {
         width: 200px;
-        height: 60px;
-        line-height: 60px;
+        height: 56px;
+        line-height: 56px;
         background-color: #17cd93;
         border-radius: 5px;
         margin-top: 20px;
         margin-left: 50px;
         color: #fff;
     }
-    .bot1 {
-        display: inline-block; 
-        width: 160px;
-        height: 56px;
-        line-height: 56px;
-        background-color: #17cd93;
-        border-radius: 5px;
-        padding-left: 6vmin;
-        margin-top: 100px;
-        margin-right: 4vmin;
-        color: #fff;
-    }
 
     .center_img1_rig .bot_cc {
         background-color: pink;
     }
-     
+   
     .img{
         margin-left:  2vmin;
         border-radius: 50%; 
@@ -285,8 +253,84 @@
         object-fit: cover; 
         object-position: center;
     }
+    body {
+    font-family: "Lato", sans-serif;
+}
+.gdetails{
+        margin-top: 20px;
+        height: 70vmin;
+        display: flex;
+        border-bottom: medium solid rgb(10, 10, 11);
+}
+.bot {
+        width: 110px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #17cd93;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 12vmin;
+        font-size: 22px;
+    }
 
-    @media screen and (max-height: 450px) {
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 0px;
+}
+
+/* .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s;
+} */
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav .bags{
+    font-weight: bold;
+    font-size:26px;
+    margin-left: 1vmin;
+    display: inline; 
+}
+
+.sidenav .closebtn {
+    /* position: absolute; */
+    width: 30px;
+    top: 0;
+    /* right: 0px; */
+    font-size: 30px;
+    margin-left: 140px;
+    display: inline; 
+    transition: 0.3s;
+}
+.sidenav .topline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: medium solid rgb(10, 10, 11);
+    margin-bottom: 20px;
+}
+.sidenav .midtext{
+    display: inline; 
+    font-size: 18px;
+    margin-left: 8vmin;
+    transition: 0.3s;
+}
+@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
